@@ -1,12 +1,10 @@
-brackets = (str) => {
-    const brackets = ["{}", "[]", "()"];
-    brackets.forEach((e) =>
-      e === `${str.slice(0, 1)}${str.slice(-1)}` ? console.log(true): 0
-    );
-  };
-  
-  brackets("{hello}");
+function brackets(string) {
+  const brackets = ["()", "{}", "[]"];
+  brackets.forEach((element) => {
+     if (element === `${string.slice(0, 1)}${string.slice(-1)}`) {
+      console.log(true);
+     } 
+  });
+}
+brackets("{helloworld}");
 
-  //The slice() method selects from a given start, up to a (not inclusive) given end.
-
-  const bracketsTest = ["{}", "[]", "()"];
